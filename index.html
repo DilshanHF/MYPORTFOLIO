@@ -9,100 +9,81 @@
     <title>Dilshan Fonseka</title>
     <link rel="icon" href="assests/images/Dilshan.png" type="image/icon">
     <link rel="stylesheet" href="style/style.css">
-    <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"/>
-    <!-- Animate On Scroll Library CSS Link  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
 <!--==================== HEADER ====================-->
-<header class="header" id="header">
-    <nav class="nav container">
-        <a href="#" class="nav__logo">DILSHAN</a>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>About Me</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#services" class="nav__link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Services</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#projects" class="nav__link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Assigments</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">
-                        <i class="ri-arrow-right-up-line"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Close button -->
-            <div class="nav__close" id="nav-close">
-                <i class="ri-close-large-line"></i>
-            </div>
-
-            <div class="nav__social">
-                <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-instagram-line"></i>
-                </a>
-
-                <a href="https://github.com/DilshanHF/" target="_blank" class="nav__social-link">
-                    <i class="ri-github-line"></i>
-                </a>
-
-                <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-dribbble-line"></i>
-                </a>
-
-                <a href="www.linkedin.com/in/dilshanfonseka/" target="_blank" class="nav__social-link">
-                    <i class="ri-linkedin-box-line"></i>
-                </a>
-            </div>
+<div class="overlay"></div>
+<header>
+    <a href="#" class="logo"><span></span>DILSHAN</a>
+    <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="right-header">
+        <a href="#" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
+        <div class="menu-icon">
+            <div class="bar"></div>
         </div>
-
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-line"></i>
-        </div>
-    </nav>
+    </div>
 </header>
 
-<section id="home">
-    <div>
-        <h5>Hi there,I'm</h5>
-        <h2>Dilshan Fonseka</h2>
-        <h3>Full Stack Developer based in Sri Lanka</h3>
-        <img src="assests/images/dilshan-half.png" title="Dilshan" width="100">
-        <p>
-            I am a passionate Software Engineering Undergraduate,  Developer, UI/UX Designer and a Freelancer
-            with a knack for exploring the world of technology.
-        </p>
-        <button type="button">Hire me</button>
-    </div>
 
+<!--==================== HOME ====================-->
+<section class="home" id="home">
+    <div class="hero-info">
+        <h3>Welcome To my World</h3>
+        <h1>Hi I'm  DILSHAN</h1>
+
+        <div class="text-animate">
+            <h2>Software Engineer</h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rerum cupiditate delectus ullam voluptates accusamus sapiente minima deleniti cum amet.</p>
+
+        <div class="btn-box">
+            <a href="dilshanfonseka76@gmail.com" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
+            <a href="assests/pdf/Dilshan%20Fonseka.pdf" target="_blank" class="btn d-CV" download="">Download CV <i class='bx bx-download'></i></a>
+        </div>
+
+        <div class="social-media">
+            <div class="bg-icon">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <span></span>
+            </div>
+
+            <div class="bg-icon">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <span></span>
+            </div>
+
+            <div class="bg-icon">
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <span></span>
+            </div>
+
+            <div class="bg-icon">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="img-hero">
+        <img src="assests/images/dilshan-half.png" alt="">
+        <div class="rotate-text">
+            <div class="text">
+                <p> I'm Frontend Developer And I'm Designer</p>
+            </div>
+            <span><i></i></span>
+        </div>
+    </div>
 </section>
 
 <br>
@@ -282,5 +263,6 @@
     Develop by | Dilshan Fonseka
 </footer>
 <script src="js/index.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
