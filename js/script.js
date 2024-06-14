@@ -42,14 +42,14 @@ buttons.forEach((button, index) => {
 
 // portfolio fillter 
 
-var mixer = mixitup('.portfolio-gallery',{
-    selectors: {
-        target: '.portfolio-box'
-    },
-    animation: {
-        duration: 500
-    }
-});
+// var mixer = mixitup('.blog-box',{
+//     selectors: {
+//         target: '.card'
+//     },
+//     animation: {
+//         duration: 500
+//     }
+// });
 
 
 // Initialize swiperjs 

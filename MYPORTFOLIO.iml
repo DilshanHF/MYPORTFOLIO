@@ -7,5 +7,7 @@
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="aos" level="application" />
     <orderEntry type="library" name="swiper" level="application" />
+    <orderEntry type="library" name="scrollreveal" level="application" />
+    <orderEntry type="library" name="mixitup" level="application" />
   </component>
 </module>
