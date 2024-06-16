@@ -19,6 +19,16 @@
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
     rgba(0,0,0,0.23)0px 6px 6px;
     --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#fff 100%);
+    --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color: hsl(212, 4%, 95%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color: hsl(212, 42%, 20%);
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
 }
 
 a{
@@ -129,6 +139,8 @@ ul.navlist{
 .menu-icon.active .bar{
     opacity: 0;
 }
+
+
 /* ==================== home section css code ============================ */
 section{
     padding: 90px 8%;
@@ -279,14 +291,12 @@ section{
     animation-delay: 3s;
 }
 
-.img-hero> img{
+.img-hero img{
     position: relative;
-    width: 420px;
+    width: 400px;
     height: auto;
     z-index: 10;
 }
-
-
 
 .rotate-text{
     position: absolute;
@@ -314,7 +324,7 @@ section{
     content: "";
     position: absolute;
     inset: 20px;
-    background: white;
+    background: #00aaff;
     border-radius: 50%;
     z-index: 1;
 }
@@ -347,8 +357,7 @@ section{
     font-size: 1.2rem;
 }
 
-/*<!--==================== About ====================-->*/
-
+/* ==================== About section css code ============================ */
 .about{
     display: flex;
     justify-content: space-between;
@@ -361,7 +370,7 @@ section{
 }
 
 .about .about-img .aboutHero{
-    width: 50vw;
+    width: 40vw;
     height: auto;
 }
 
@@ -382,8 +391,7 @@ section{
     padding: 3rem 0;
 }
 
-.about-content h1{
-    font-size: 2.1rem;
+.about-content h2{
     color: var(--main-color);
 }
 
@@ -559,7 +567,7 @@ section{
 }
 
 .proposal img{
-    width: 50vw;
+    width: 40vw;
     height: auto;
     margin: -4rem 0 0;
     z-index: 2;
@@ -622,33 +630,116 @@ section{
     bottom: 4%;
     right: 6%;
 }
-/* ==================== Project section css code ============================ */
 
-.blog-box {
+
+/* ==================== Services section css code ============================ */
+.fillter-buttons{
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+
+.fillter-buttons button{
+    background: var(--gradient-white-bg2);
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
+    rgba(60,64,67,0.15)0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.fillter-buttons button:hover,button.mixitup-control-active{
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
+
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(370px , 1fr));
+    gap: 1rem;
+}
+
+.portfolio-img img{
+    display: block;
+    width: 100%;
+    height: 160px;
+    transition: .3s;
+}
+
+.portfolio-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
+    background: var(--gradient-white-bg2);
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.portfolio-content{
+    width: 100%;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+}
+
+.portfolio-img{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-content a.readMore{
+    padding: 8px 12px;
+    font-size: .8rem;
+}
+
+.portfolio-content p{
+    font-size: .9rem;
+    color: var(--font-color);
+    margin: .5rem 0 1rem 0;
+}
+
+
+/* ====================  Assigment section css code ============================ */
+
+/* ==================== Blog section css code ============================ */
+
+.blog-box{
     padding: .5rem !important;
 }
 
-.blog {
+.blog{
     position: relative;
 }
 
-.cards {
+.cards{
     padding: 1rem .1rem;
 }
 
-.card {
+.card{
     background: var(--gradient-white-bg2);
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
     padding: 1rem;
     border-radius: 10px;
 }
 
-.card-top {
+.card-top{
     overflow: hidden;
     border-radius: 10px 10px 0 0;
 }
 
-.card img {
+.card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -656,51 +747,268 @@ section{
     display: block;
 }
 
-.card:hover img {
+.card:hover img{
     transform: scale(1.1);
 }
 
-.card-info {
+.card-info{
     padding-bottom: .5rem;
 }
 
-.card-info h2 {
+.card-info h2{
     font-size: 1.2rem;
     margin-top: 1rem;
 }
 
-.date {
+.data{
     display: block;
     margin: .2rem 0;
 }
 
-.card .excerpt {
+.card .excerpt{
     color: var(--font-color);
     margin-bottom: 1.5rem;
 }
 
-.swiper-pagination {
+.swiper-pagination{
     position: relative !important;
     margin-top: 3rem;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination-bullet{
     height: 10px !important;
     width: 30px !important;
     border-radius: 25px !important;
     background: var(--gradient-color-bg) !important;
 }
 
-.blog .showcase img {
+.blog .showcase img{
     position: absolute;
     width: 90px;
     height: 90px;
 }
 
+.blog .showcase .circle{
+    filter: blur(3px);
+}
+
+.blog .showcase .ring{
+    top: 0;
+    left: -1%;
+}
+
+.blog .showcase .half-ring{
+    top: 10%;
+    right: 10%;
+}
+
+.blog .showcase .second-circle{
+    top: 30%;
+    left: 2%;
+    filter: blur(1px);
+}
+
+
+/* ==================== Contact section css code ============================ */
+
+.contactSkills{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-info,.skills{
+    width: 100%;
+    background: var(--gradient-white-bg2);
+    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+.contact-info input,
+.contact-info form textarea{
+    width: 100%;
+}
+
+.contact-info form input,
+.contact-info form textarea{
+    /* width: 100%; */
+    padding: .8rem;
+    border: 2px solid #e8e1e1;
+    margin: .5rem 0;
+    background: #e8f1f9;
+    border-radius: 5px;
+    outline: none;
+    transition: .3s;
+}
+
+.contact-info form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box input{
+    width: 49%;
+}
+
+form input:focus,form textarea:focus{
+    filter: brightness(100%);
+    background: #d2e9ff;
+    border: 2px solid #f8caca;
+}
+
+form textarea{
+    resize: none;
+}
+
+form .btn{
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/* ==================== Skills section css code ============================ */
+
+.skillBox{
+    padding: 0 1rem 1rem;
+}
+
+.skillBox .main-text{
+    margin-bottom: 1rem;
+}
+
+.skill-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px , auto));
+    justify-content: center;
+    grid-gap: 2.5rem;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-circle{
+    width: 170px;
+    height: 170px;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(50,50,93,0.25)0px 6px 12px -2px,
+    rgba(0,0,0,0.3)0px 3px 7px -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: rgba(204,219,232)3px 3px 6px 0px inset,
+    rgba(255,255,255,0.5)-3px -3px 6px 1px inset;
+}
+
+.outer-circle svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.outer-circle svg circle{
+    fill: none;
+    stroke-width: 15px;
+    stroke: url(#GradientColor);
+    stroke-linecap: round;
+    stroke-dasharray: 465;
+    stroke-dashoffset: 464;
+}
+
+.outer-circle h2.counter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+h2.counter span{
+    font-size: 1.7rem;
+}
+
+.sk-title{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*======================= footer ============================ */
+footer{
+    text-align: center;
+    margin: 0 8%;
+    padding: 2rem 0;
+    border-top: 2px solid #e8e1e1;
+}
+
+
+#progress{
+    position: fixed;
+    /* background: #194eb9; */
+    z-index: 1000;
+    bottom: 60px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    color: #1d002c;
+    cursor: pointer;
+    box-shadow: rgba(50,50,93,0.25)0px 50px 100px -20px,
+    rgba(0,0,0,0.3)0px 30px 60px -30px,
+    rgba(10,37,64,0.35)0px -2px 6px 0px inset;
+}
+
+
+#progress-value{
+    display: grid;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background: var(--gradient-color-bg);
+    border-radius: 50%;
+    color: #fff;
+    place-items: center;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*======================= @keyframes ============================ */
+
 @keyframes moveText{
     0%,10%,100%{
         background-position: -24rem 0;
@@ -763,7 +1071,9 @@ section{
 }
 
 
-/*======================= mediaQueary ============================ */
+
+
+/*======================= BrakPoints ============================ */
 
 @media(max-width:1200px){
     html{
@@ -891,3 +1201,4 @@ section{
         padding: 13px;
     }
 }
+

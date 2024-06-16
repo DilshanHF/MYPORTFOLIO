@@ -11,13 +11,16 @@
     <!--==================== LINKS ====================-->
     <link rel="icon" href="assests/images/Dilshan.png" type="image/icon">
     <link rel="stylesheet" href="style/style.css">
-<!--    <link rel="stylesheet" href="style/normalize.css">-->
+    <link rel="stylesheet" href="style/normalize.css">
+
+
 
     <!-- boxicon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!--    <link rel="stylesheet" href="style/swiper-bundle.min.css">-->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
 
 
 </head>
@@ -30,7 +33,7 @@
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#portfolio">Projects</a></li>
         <li><a href="#assigment">Assigments</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
@@ -102,7 +105,7 @@
     </div>
     <div class="about-content">
         <h1 class="heading">About Me</h1>
-        <h3>3 Year's Experience on Product Design</h3>
+        <h3>Undergradute in Software Engineering</h3>
         <p> Hi there,I’m Dilshan fonseka, a passionate software engineer  with a keen interest in IT field.I still studying from Institute of software engineering.Leaning more about web development
             and UI/UX designing.I like to improve my skills with working
             on projects . I'm deeply passionate about Software engineering and bring</p>
@@ -159,7 +162,7 @@
             </div>
         </div>
         <div class="cvContent">
-            <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            <a href="assests/pdf/Dilshan%20Fonseka.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
         </div>
     </div>
 </section>
@@ -217,121 +220,496 @@
 
 </section>
 
-<section class="projects" id="projects">
+
+
+<section class="portfolio" id="portfolio">
     <div class="main-text">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">My Projects</h2>
         <span>My Latest Projects</span>
     </div>
+    <div class="fillter-buttons">
+        <button class="button mixitup-control-active" data-filter="all">All Work</button>
+        <!--        <button class="button" data-filter=".web">Web Development</button>-->
+        <!--        <button class="button" data-filter=".uiux">UI/UX Design</button>-->
+        <!--        <button class="button" data-filter=".branding">Branding Design</button>-->
+    </div>
 
-    <div class="blog-box swiper mySwiper">
-        <div class="cards swiper-wrapper">
-            <div class="card swiper-slide">
-                <div class="card-top">
-                    <img src="assests/images/project6.png" alt="">
-                </div>
-                <div class="card-info">
-                    <h2>Furniture Management System</h2>
-                    <span class="date">Monday, Jan 10, 2024</span>
-                    <p class="excerpt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
-                    </p>
-                    <a href="#https://github.com/DilshanHF/Inrich_Design_Studio_1stSem_Final_Project" class="readMore">Explore More</a>
-                </div>
+    <div class="portfolio-gallery">
+        <div class="portfolio-box mixer uiux">
+            <div class="portfolio-content">
+                <h3>Furniture Management System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/Inrich_Design_Studio_1stSem_Final_Project" class="readMore">Explore More</a>
             </div>
-
-            <div class="card swiper-slide">
-                <div class="card-top">
-                    <img src="assests/images/Connect%204.jpg" alt="">
-                </div>
-                <div class="card-info">
-                    <h2>Connect Four Game</h2>
-                    <span class="date">Sunday, Oct 17, 2023</span>
-                    <p class="excerpt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
-                    </p>
-                    <a href="#https://github.com/DilshanHF/Connect-4-Game" class="readMore">Explore More</a>
-                </div>
+            <div class="portfolio-img">
+                <img src="assests/images/project6.png" alt="">
             </div>
+        </div>
 
-            <div class="card swiper-slide">
-                <div class="card-top">
-                    <img src="assests/images/Project%20%20(1).jpg" alt="">
-                </div>
-                <div class="card-info">
-                    <h2>Chat Application</h2>
-                    <span class="date">Sunday, Jan 04, 2023</span>
-                    <p class="excerpt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
-                    </p>
-                    <a href="#https://github.com/DilshanHF/chatApp.git" class="readMore">Explore More</a>
-                </div>
+        <div class="portfolio-box mix web">
+            <div class="portfolio-content">
+                <h3>Chat Application</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/chatApp.git" class="readMore">Explore More</a>
             </div>
-
-            <div class="card swiper-slide">
-                <div class="card-top">
-                    <img src="assests/images/Project%20%20(2).jpg" alt="">
-                </div>
-                <div class="card-info">
-                    <h2>Netflix Logo Design</h2>
-                    <span class="date">Sunday, Jan 14, 2023</span>
-                    <p class="excerpt">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
-                    </p>
-                    <a href="#https://github.com/DilshanHF/NetflixLogo.git" class="readMore">Explore More</a>
-                </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(2).jpg" alt="">
             </div>
+        </div>
 
+        <div class="portfolio-box mixer web">
+            <div class="portfolio-content">
+                <h3>Connect 4 Game</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/Connect-4-Game.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Connect%204.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="portfolio-box mixer web">
+            <div class="portfolio-content">
+                <h3>Netflix Intro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/NetflixLogo.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(4).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer uiux">
+            <div class="portfolio-content">
+                <h3>POS System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/POS_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(1).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Libry Management System</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/BookWave-Libry_Managemnet_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
         </div>
     </div>
 
-    <div class="swiper-pagination"></div>
+</section>
+
+
+<section class="portfolio" id="assigment">
+    <div class="main-text">
+        <h2 class="heading">My Assigments</h2>
+<!--        <span>My Latest Projects</span>-->
+    </div>
+    <div class="fillter-buttons">
+        <button class="button mixitup-control-active" data-filter="all">All Work</button>
+        <!--        <button class="button" data-filter=".web">Web Development</button>-->
+        <!--        <button class="button" data-filter=".uiux">UI/UX Design</button>-->
+        <!--        <button class="button" data-filter=".branding">Branding Design</button>-->
+    </div>
+
+    <div class="portfolio-gallery">
+        <div class="portfolio-box mixer uiux">
+            <div class="portfolio-content">
+                <h3>Assigment 01</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="assests/pdf/ITS1066-Dilshan%20Fonseka-GDSE67.pdf" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/project6.png" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mix web">
+            <div class="portfolio-content">
+                <h3>Assigment 02</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/chatApp.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(2).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer web">
+            <div class="portfolio-content">
+                <h3>Assigment 03</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/Connect-4-Game.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Connect%204.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="portfolio-box mixer web">
+            <div class="portfolio-content">
+                <h3>Assigment 04</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/NetflixLogo.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(4).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer uiux">
+            <div class="portfolio-content">
+                <h3>Assigment 05</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/POS_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(1).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 06</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://dilshanhf.github.io/POS_System/" class="readMore">View</a>
+                <a href="https://github.com/DilshanHF/POS_System.git" class="readMore">Explore</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 07</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://dilshanhf.github.io/POS_System/" class="readMore">View</a>
+                <a href="https://github.com/DilshanHF/POS_System.git" class="readMore">Explore</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 08</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/BookWave-Libry_Managemnet_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 09</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/BookWave-Libry_Managemnet_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 10</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/BookWave-Libry_Managemnet_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 11</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/BookWave-Libry_Managemnet_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+        <div class="portfolio-box mixer branding">
+            <div class="portfolio-content">
+                <h3>Assigment 12</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                <a href="https://github.com/DilshanHF/BookWave-Libry_Managemnet_System.git" class="readMore">Explore More</a>
+            </div>
+            <div class="portfolio-img">
+                <img src="assests/images/Project%20%20(3).jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!--<section class="blog" id="assigment">-->
+<!--    <div class="main-text">-->
+<!--        <h2 class="heading">Assigments</h2>-->
+<!--&lt;!&ndash;        <span>My latest Projects</span>&ndash;&gt;-->
+<!--    </div>-->
+
+<!--    <div class="blog-box swiper mySwiper">-->
+<!--        <div class="cards swiper-wrapper">-->
+<!--            <div class="card swiper-slide">-->
+<!--                <div class="card-top">-->
+<!--                    <img src="assests/images/project6.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="card-info">-->
+<!--                    <h2>Mobile App Landing Page</h2>-->
+<!--                    <span class="date">Sunday, Jan 14, 2023</span>-->
+<!--                    <p class="excerpt">-->
+<!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.-->
+<!--                    </p>-->
+<!--                    <a href="#https://github.com/DilshanHF/Connect-4-Game" class="readMore">Explore More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="card swiper-slide">-->
+<!--                <div class="card-top">-->
+<!--                    <img src="assests/images/Project%20%20(1).jpg" alt="">-->
+<!--                </div>-->
+<!--                <div class="card-info">-->
+<!--                    <h2>Mobile App Landing Page</h2>-->
+<!--                    <span class="date">Sunday, Jan 14, 2023</span>-->
+<!--                    <p class="excerpt">-->
+<!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.-->
+<!--                    </p>-->
+<!--                    <a href="#" class="readMore">Explore More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="card swiper-slide">-->
+<!--                <div class="card-top">-->
+<!--                    <img src="assests/images/Project%20%20(2).jpg " alt="">-->
+<!--                </div>-->
+<!--                <div class="card-info">-->
+<!--                    <h2>Mobile App Landing Page</h2>-->
+<!--                    <span class="date">Sunday, Jan 14, 2023</span>-->
+<!--                    <p class="excerpt">-->
+<!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.-->
+<!--                    </p>-->
+<!--                    <a href="#" class="readMore">Explore More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="card swiper-slide">-->
+<!--                <div class="card-top">-->
+<!--                    <img src="assests/images/Project%20%20(2).jpg" alt="">-->
+<!--                </div>-->
+<!--                <div class="card-info">-->
+<!--                    <h2>Mobile App Landing Page</h2>-->
+<!--                    <span class="date">Sunday, Jan 14, 2023</span>-->
+<!--                    <p class="excerpt">-->
+<!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.-->
+<!--                    </p>-->
+<!--                    <a href="#" class="readMore">Explore More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="card swiper-slide">-->
+<!--                <div class="card-top">-->
+<!--                    <img src="assests/images/Project%20%20(3).jpg" alt="">-->
+<!--                </div>-->
+<!--                <div class="card-info">-->
+<!--                    <h2>Mobile App Landing Page</h2>-->
+<!--                    <span class="date">Sunday, Jan 14, 2023</span>-->
+<!--                    <p class="excerpt">-->
+<!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.-->
+<!--                    </p>-->
+<!--                    <a href="#" class="readMore">Explore More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="card swiper-slide">-->
+<!--                <div class="card-top">-->
+<!--                    <img src="assests/images/project6.png" alt="">-->
+<!--                </div>-->
+<!--                <div class="card-info">-->
+<!--                    <h2>Mobile App Landing Page</h2>-->
+<!--                    <span class="date">Sunday, Jan 14, 2023</span>-->
+<!--                    <p class="excerpt">-->
+<!--                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.-->
+<!--                    </p>-->
+<!--                    <a href="#" class="readMore">Explore More</a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="swiper-pagination"></div>-->
+
+
 
 </section>
 <br>
-<section id="contact">
-    <div><u><h2>Contact me</h2></u></div>
-    <br>
-    <div>
-        <label for="fName">First name</label><br>
-        <input type="text" id="fName" placeholder="Enter your First name">
-    </div>
-    <br>
-    <div>
-        <label for="lname">Last Name</label><br>
-        <input type="text" id="lname" placeholder="Enter your last name">
-    </div>
-    <br>
-    <div>
-        <label for="num">Mobile Number</label><br>
-        <input type="tel" id="num" placeholder="Enter your Mobile Number">
-    </div>
-    <br>
-    <div>
-        <label for="email">Email</label><br>
-        <input type="email" id="email" placeholder="Enter your Email">
-    </div>
-    <br>
-    <div>
-        <textarea placeholder="Your massage" rows="4" cols="50"></textarea>
-    </div>
-    <button type="submit">Submit</button>
+<section class="down-box" id="contact">
+    <div class="contactSkills">
+        <div class="contact-info">
+            <div class="main-text">
+                <h2 class="heading">Contact Me</h2>
+                <span>get in touch with me</span>
+            </div>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="Description" id="" cols="30" rows="10" placeholder="Description"></textarea>
+                <div class="formBtn">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </div>
+        <div class="skills">
+            <div class="container">
+                <div class="skillBox">
+                    <div class="main-text">
+                        <h2 class="heading">My Skills</h2>
+                        <span>Let Me Help you</span>
+                    </div>
+                    <div class="skill-wrap">
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                    </svg>
+                                    <h2 class="counter">
+                                        <span data-target="89">89</span>%
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                HTML
+                            </div>
+                        </div>
 
-    <h5>
-        Have a project in mind?<br>
-        Want to work with me?<br>
-        Or any questions?<br>
-        Please feel free to reach out to me via following:
-    </h5>
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                    </svg>
+                                    <h2 class="counter">
+                                        <span data-target="47">0</span>%
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                CSS
+                            </div>
+                        </div>
+
+
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                    </svg>
+                                    <h2 class="counter">
+                                        <span data-target="56">0</span>%
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                JavaScript
+                            </div>
+                        </div>
+
+
+                        <div class="skill">
+                            <div class="outer-circle">
+                                <div class="inner-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                    </svg>
+                                    <h2 class="counter">
+                                        <span data-target="19">0</span>%
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="sk-title">
+                                UI/UX Design
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 <footer>
-    Develop by | Dilshan Fonseka
+    <p>Copyright © 2024 by <span>DILSHAN FONSEKA</span> || All Right Reservd.</p>
 </footer>
+
+<div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+</div>
+
+
 <script src="js/index.js"></script>
 <script src="js/script.js"></script>
+<!--<script src="js/assigment.js"></script>-->
 <!-- scroll reveal  -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- mixitup cdn js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 </body>

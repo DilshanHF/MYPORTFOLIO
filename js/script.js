@@ -30,57 +30,60 @@ const buttons = document.querySelectorAll('.about-btn button');
 const contents = document.querySelectorAll('.content');
 
 buttons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    contents.forEach(content => content.style.display = 'none');
-    contents[index].style.display = 'block';
-    buttons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-  });
+    button.addEventListener('click', () => {
+        contents.forEach(content => content.style.display = 'none');
+        contents[index].style.display = 'block';
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
 });
 
 
 
-// portfolio fillter 
+// portfolio fillter
 
-// var mixer = mixitup('.blog-box',{
-//     selectors: {
-//         target: '.card'
-//     },
-//     animation: {
-//         duration: 500
-//     }
-// });
-
-
-// Initialize swiperjs 
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+/*var mixer = mixitup('.portfolio-gallery',{
+    selectors: {
+        target: '.portfolio-box'
     },
-    autoplay:{
-        delay:3000,
-        disableOnInteraction:false,
-    },
-
-    breakpoints: {
-        576:{
-            slidesPerView:2,
-            spaceBetween:10,
-        },
-        1200:{
-            slidesPerView:3,
-            spaceBetween:20,
-        },
+    animation: {
+        duration: 500
     }
-  });
+});*/
+
+
+// Initialize swiperjs
+
+let swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 32,
+    grabCursor: true,
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        600: {
+            slidesPerView: 2,
+        },
+        968: {
+            slidesPerView: 3,
+        },
+    },
+});
 
 
 
-//   skill Progress bar 
+
+//   skill Progress bar
 
 const first_skill = document.querySelector(".skill:first-child");
 const sk_counters = document.querySelectorAll(".counter span");
@@ -88,7 +91,7 @@ const progress_bars = document.querySelectorAll(".skills svg circle");
 
 window.addEventListener("scroll",()=>{
     if(!skillsPlayed)
-    skillsCounter();
+        skillsCounter();
 })
 
 
@@ -100,7 +103,7 @@ function hasReached(el){
 
 function updateCount(num,maxNum){
     let currentNum = +num.innerText;
-    
+
     if(currentNum < maxNum){
         num.innerText = currentNum + 1;
         setTimeout(()=>{
@@ -130,7 +133,7 @@ function skillsCounter(){
 }
 
 
-// side progress bar 
+// side progress bar
 
 let calcScrollValue = ()=>{
     let scrollProgress = document.getElementById("progress");
@@ -138,7 +141,7 @@ let calcScrollValue = ()=>{
 
     let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100)/calcHeight);
-    
+
     if(pos > 100){
         scrollProgress.style.display = "grid";
     }else{
@@ -156,7 +159,7 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 
-// active menu 
+// active menu
 
 let menuLi = document.querySelectorAll("header ul li a");
 let section = document.querySelectorAll('section');
@@ -172,7 +175,7 @@ window.addEventListener("scroll",activeMenu);
 
 // scroll reveal
 
-ScrollReveal({ 
+ScrollReveal({
     distance:"90px",
     duration:2000,
     delay:200,
